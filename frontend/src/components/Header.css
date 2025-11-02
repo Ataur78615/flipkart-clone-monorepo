@@ -1,0 +1,97 @@
+/* src/components/Header.css */
+
+/* Main Navbar */
+.flipkart-navbar {
+  background-color: #2874f0; /* Flipkart Blue */
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+/* Logo */
+.flipkart-logo {
+  font-weight: bold;
+  font-style: italic;
+  font-size: 1.4rem;
+  color: white !important;
+}
+
+/* Search Bar */
+.flipkart-search {
+  min-width: 450px; /* Search bar ki width */
+  flex-grow: 1; /* Taki space le sake */
+  max-width: 600px; /* Max width */
+}
+
+.search-box {
+  border-radius: 2px 0 0 2px;
+  border: none;
+  font-size: 0.9rem;
+  padding: 8px 12px;
+}
+.search-box:focus {
+  box-shadow: none;
+}
+
+.search-btn {
+  border-radius: 0 2px 2px 0;
+  background-color: white;
+  border: none;
+  color: #2874f0; /* Blue search icon */
+}
+.search-btn:hover {
+  background-color: #f0f0f0;
+  color: #2874f0;
+}
+
+/* Right side ke links */
+.nav-link-custom {
+  color: white !important;
+  font-weight: 500;
+  font-size: 0.95rem;
+  margin: 0 8px;
+  display: flex;
+  align-items: center;
+}
+
+/* 'More' aur 'Username' dropdown ka text */
+#more-dropdown,
+#username {
+  color: white !important;
+  font-weight: 500;
+  font-size: 0.95rem;
+  margin: 0 8px;
+}
+
+/* 'Login' Button Styling */
+.login-btn-link {
+  background-color: white !important;
+  color: #2874f0 !important; /* Blue text */
+  font-weight: 500;
+  border-radius: 2px;
+  padding: 6px 35px !important; /* !important ka use Nav.Link ki default padding override karne ke liye */
+  margin: 0 15px;
+  font-size: 0.95rem;
+}
+.login-btn-link:hover {
+  background-color: #f5f5f5 !important;
+  color: #2874f0 !important;
+}
+
+/* Cart Badge (Count) */
+.cart-badge {
+  background-color: #ff6161; /* Flipkart's notification red */
+  color: white;
+  border-radius: 40%;
+  padding: 2px 7px;
+  font-size: 0.75rem;
+  font-weight: bold;
+  margin-left: 6px;
+  vertical-align: middle;
+}
+
+/* Nav Icons */
+.nav-icon {
+  width: 20px;
+  height: 20px;
+  filter: brightness(0) invert(1); /* Makes icons white */
+}
