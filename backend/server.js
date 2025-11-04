@@ -11,7 +11,11 @@ const sellerRoutes = require('./routes/sellerRoutes');
 
 
 const app = express();
-app.use(cors());
+// Humne backend ko bataya ki sirf aapke frontend URL se hi request accept karni hai
+const frontendURL = 'https://flipkart-clone-monorepo-1.onrender.com';
+app.use(cors({
+  origin: frontendURL
+}));
 app.use(express.json()); // JSON body parser middleware
 
 // Serve static files from public directory
