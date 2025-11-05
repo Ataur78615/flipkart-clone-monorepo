@@ -17,8 +17,21 @@ const importData = async () => {
     await Product.deleteMany();
     await User.deleteMany();
 
+    // Create a dummy admin user for products
+    const adminUser = await User.create({
+      name: 'Admin User',
+      email: 'admin@example.com',
+      password: '123456',
+      isAdmin: true,
+    });
+
+    // Add user to products
+    const sampleProducts = products.map((product) => {
+      return { ...product, user: adminUser._id };
+    });
+
     // Naya data insert karo
-    await Product.insertMany(products);
+    await Product.insertMany(sampleProducts);
 
     console.log('Data Imported! ✅');
     process.exit();

@@ -1,7 +1,7 @@
 const products = [
     {
         name: 'Airpods Wireless Bluetooth Headphones',
-        image: 'images/airpods.jpg',
+        image: 'https://cellularstockpile.com/wp-content/uploads/2023/07/airpods-pro-2nd-generation-with-magsafe-charging-case-speaker-and-lanyard-loop-1200x1200.jpg',
         description: 'Bluetooth technology lets you connect it with compatible devices wirelessly High-quality AAC audio offers immersive listening experience Built-in microphone allows you to take calls while working',
         brand: 'Apple',
         category: 'Electronics',
@@ -23,7 +23,7 @@ const products = [
     },
     {
     name: 'Cannon EOS 80D DSLR Camera',
-    image: 'images/cemera.jpg',
+    image: 'https://tse3.mm.bing.net/th/id/OIP.ujuLXC2bOeaqS9V5g3zb9wHaER?pid=Api&P=0&h=180',
     description:
       'Characterized by versatile imaging specs, the Canon EOS 80D further clarifies itself using a pair of robust focusing systems and an intuitive design',
     brand: 'Cannon',
